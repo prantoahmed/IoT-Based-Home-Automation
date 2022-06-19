@@ -1,0 +1,18 @@
+{
+    "short_name" : "Automation",
+    "name" : "Home automation IoT",
+    "icons" : [
+        {
+            "src" : "./Assets/app-icon.svg",
+            "type" : "image/svg+xml",
+            "sizes" : "512x512"
+        }
+    ],
+    "start_url" : "/index.html",
+    "theme_color" : "#C5D8A4",
+    "background_color" : "#F4FCD9",
+    "display" : "standalone",
+    "description" : "8th semester final project",
+    "orientation" : "portrait"
+
+}

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./designs.css">
+    <link rel="manifest" href="./manifest.json">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@200&display=swap" rel="stylesheet">
+    <title>Home</title>
+</head>
+
+<body>
+
+
+    <div class="signup_page" id="signup_ui">
+        <div class="authentication_page">
+            <div class="input_field">
+                <input type="email" name="email" id="inputed_email" placeholder="Enter E-mail">
+            </div>
+            <div class="input_field">
+                <input type="text" name="name" id="inputed_username" placeholder="Enter Username">
+            </div>
+            <div class="input_field">
+                <input type="password" name="new_password" id="inputed_new_password" placeholder="New Password">
+            </div>
+            <div class="input_field">
+                <input type="password" name="repeat_password" id="inputed_repeat_password"
+                    placeholder="Repeat Password">
+            </div>
+            <div class="enter_button">
+                <button id="signup_button">
+                    Sign up
+                </button>
+                <div id="log_in_page">
+                    <u>
+                        Already have an account!
+                    </u>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="login_page" id="login_ui">
+
+        <div class="authentication_page">
+            <div class="input_field">
+                <input type="email" name="email" id="login_email" placeholder="Enter E-mail">
+            </div>
+            <div class="input_field">
+                <input type="password" name="password" id="login_password" placeholder="Enter Password">
+            </div>
+            <div class="enter_button">
+                <button id="login_button">
+                    Login
+                </button>
+                <div id="sign_up_page">
+                    <u>
+                        Create an account!
+                    </u>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="home_page_ui" class="home_page">
+        <div class="app_bar">
+
+            <div class="profile_img" id="user_info">
+                <img src="./Assets/man.png" alt="user icon" srcset="">
+            </div>
+
+            <div class="user_name_and_date">
+                <h5 id="displayed_name">Nisha mishri</h5>
+                <h6 id="date_text">24 March 2022</h6>
+            </div>
+
+            <div class="settings_button" id="menu_button">
+                <img src="./Assets/setting_icon.svg" alt="" srcset="">
+            </div>
+
+        </div>
+
+        <div class="main_app_view" id="main_app_features">
+            <div class="room_conditions">
+                <div class="room_temperature_and_humidity">
+                    <div class="room_temperature">
+                        <div class="temperature">
+                            <div class="temperature_title">
+                                Temperature
+                            </div>
+                            <div class="temperature_values">
+                                <div id="temperature_value">
+                                    30
+                                </div>
+                                <div class="degree">
+                                    &deg;
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="room_humidity">
+                        <div class="humidity">
+                            <div class="humidity_title">
+                                Humidity
+                            </div>
+                            <div class="humidity_values">
+                                <div id="humidity_value">
+                                    60
+                                </div>
+                                <div class="percent">
+                                    %
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+           <div class="sensor_conditions">
+               <div class="sensor_widgets">
+                   Conditions
+               </div>
+                <div class="smoke">
+                    <div class="smoke_image">
+                        <img src="./Assets/icon_png/smoke.png" alt="" srcset="">
+                    </div>
+                    <div>
+                        Smoke
+                        <h5>Smoke Ok</h5>
+                    </div>
+                </div>
+                <div class="gas">
+                    <div class="gas_image">
+                        <img src="./Assets/icon_png/gas-tank.png" alt="" srcset="">
+                    </div>
+                    <div>
+                        Gas
+                        <h5>Gasline Ok</h5>
+                    </div>
+                </div>
+                <div class="fire">
+                    <div class="fire_image">
+                        <img src="./Assets/icon_png/fire.png" alt="" srcset="">
+                    </div>
+                    <div>
+                        Fire
+                        <h5>Fire Ok</h5>
+                    </div>
+                </div>
+            </div>  
+
+
+            <div class="dashboard">
+                <div class="switch_widgets">
+                    Switches
+                </div>
+                <div class="switches">
+                    <div class="light" id="light_switch">
+                        <div class="light_image">
+                            <img src="./Assets/icon_png/light-bulb.png" alt="" srcset="">
+                        </div>
+                        Light
+                    </div>
+    
+                    <div class="fan" id="fan_switch">
+                        <div class="fan_image">
+                            <img src="./Assets/icon_png/fan.png" alt="" srcset="">
+                        </div>
+                        Fan
+                    </div> 
+                    
+                    <div class="ac" id="ac_switch">
+                        <div class="ac_image">
+                            <img src="./Assets/icon_png/air-conditioner.png" alt="">
+                        </div>
+                        A/C
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+        <div class="settings_page" id="menu_page_ui">
+            <div>
+                <div class="menu_style">
+                    <button id="logout_button">logout</button>
+                </div>
+                <div class="menu_style">
+                    <button id="close_button">close</button>
+                </div>
+                <div class="menu_style">
+                    <button id="configure_button">configuration</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hardware_configuration" id="hardware_setup">
+        hardware_configuration
+    </div>
+    <div class="loading_ui">
+        <img src="./Assets/loading.svg" alt="" srcset="">
+    </div>
+    <div class="user_logout" id="user_information_with_logout">
+        <div class="logout_profile_img">
+            <img src="./Assets/man.png" alt="user icon" srcset="">
+        </div>
+
+        <div class="logout_user_name">
+            <h5 id="displayed_name_on_information">MD. AL FAHAD</h5>
+        </div>
+        <div class="logout_user_button" id="logout_text_button">
+            <h5>
+                Logout
+            </h5>
+        </div>
+    </div>
+
+
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('./service-worker.js')
+                .then(function (registration) {
+                    console.log('Registration successful, scope is:', registration.scope);
+                })
+                .catch(function (error) {
+                    console.log('Service worker registration failed, error:', error);
+                });
+        }
+    </script>
+    <script type="module" src="./code_run.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', { 'packages': ['gauge'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+
+            var data = google.visualization.arrayToDataTable([
+                ['Label', 'Value'],
+                ['Fire', 100],
+
+            ]);
+
+            var options = {
+                width: 100, height: 100,
+                redFrom: 90, redTo: 100,
+                yellowFrom: 75, yellowTo: 90,
+                minorTicks: 5
+            };
+
+            var chart = new google.visualization.Gauge(document.getElementById('chart_div'));
+
+            chart.draw(data, options);
+
+            setInterval(function () {
+                data.setValue(0, 1, 40 + Math.round(60 * Math.random()));
+                chart.draw(data, options);
+            }, 13000);
+            setInterval(function () {
+                data.setValue(1, 1, 40 + Math.round(60 * Math.random()));
+                chart.draw(data, options);
+            }, 5000);
+            setInterval(function () {
+                data.setValue(2, 1, 60 + Math.round(20 * Math.random()));
+                chart.draw(data, options);
+            }, 26000);
+        }
+    </script>
+</body>
+
+</html>

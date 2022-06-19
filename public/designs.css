@@ -1,0 +1,393 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    background-color: #F4FCD9;
+
+    /*background-color: #F4FCD9;*/
+    font-family: 'Roboto', sans-serif;
+    user-select: none;
+}
+
+
+#signup_ui, #login_ui{
+    display: none;
+}
+.authentication_page{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+}
+
+.input_field input{
+    height: 30px;
+    width: 200px;
+    border: none;
+    border-bottom: 1px solid #c9c9c9;
+    margin-top: 10px;
+    padding-left: 10px;
+    color: #000000;
+}
+.enter_button button{
+    height: 20px;
+    width: 100px;
+    margin-top: 30px;
+    border-radius: 50px;
+    border: none;
+    color: #ffffff;
+    background-color: #C5D8A4;
+}
+.enter_button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.enter_button div{
+    position: relative;
+    top: 100px;
+}
+
+.home_page{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    display: none;
+
+}
+
+.app_bar{
+    height: 50px;
+    width: 100%; 
+    background-color:#C5D8A4;
+    position: relative;
+    display: flex;
+    border-bottom: 1px solid white;
+    box-shadow: 0px 0px 10px 0px #00000090;
+
+}
+
+.profile_img{
+    height: 50px;
+    background-color: transparent;
+    position: relative;
+    left: 15px;
+}
+.profile_img img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 3px solid rgb(255, 255, 255);
+    background-color: transparent;
+
+}
+.user_name_and_date{
+    background-color: transparent;
+    color:#ffffff;
+}
+.user_name_and_date h5, h6{
+    height: 20px;
+
+    background-color:transparent;
+    position: relative;
+    left: 25px;
+    top: 10px;
+
+   
+}
+
+.menu_page{
+    height: 200px;
+    width: 200px;
+    background-color: #c9c9c9;
+}
+.settings_button{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-self: flex-end;
+    position: absolute;
+    right: 0%;
+    background-color: transparent;
+}
+.settings_button img{
+    height: 35px;
+    width: 35px;
+    background-color: transparent;
+}
+
+.main_app_view{
+    height: 100vh;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.settings_page{
+    position: absolute;
+    top: 50px;
+    right: 0;
+    display: none;
+
+}
+.menu_style{
+    height: 30px;
+    width: 200px;
+    border-bottom: 1px solid #000000;
+    border-left: 1px solid #000000;
+    background-color: #F4FCD9;
+}
+.menu_style button{
+    height: inherit;
+    width: inherit;
+    border: none;
+    border-radius: 2px;
+    color: #000000;
+    font-weight: bold;
+    background-color: transparent;
+}
+.room_conditions{
+    height: 200px;
+    width: 340px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid white;
+
+}
+.room_temperature_and_humidity{
+    height: 160px;
+    width: 300px;
+ 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid white;
+    background-image: url(./Assets/sunny.png);
+    background-size: 200px 200px;
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-blend-mode: darken;
+    box-shadow: 1px 1px 6px #00000046;
+}
+.room_temperature, .room_humidity{
+    height: 80px;
+    width: 100px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+
+}
+.temperature_title, .humidity_title{
+    font-size: small;
+    margin-bottom: 20px;
+    background-color: transparent;
+}
+.temperature_values, .humidity_values{
+    background-color: transparent;
+    display: flex;
+}
+.temperature_values{
+    margin-left: 10px;
+}
+.degree,.percent, #temperature_value, #humidity_value{
+    background-color: transparent;
+    display: flex;
+}
+.percent, .degree{
+    font-size: x-small;
+    font-weight: bold;
+}
+.degree{
+    font-size: large;
+
+}
+.temperature, .humidity{
+    font-size: 40px;
+    font-weight: bolder;
+    color:rgba(0, 0, 0, 0.5);
+    background-color: transparent;
+}
+
+
+.sensor_conditions{
+    height: 270px;
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid white;
+    padding-bottom: 20px;
+}
+.sensor_widgets{
+    height: 30px;
+    width: 300px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #00000069;
+}
+.smoke, .gas, .fire {
+    height: 60px;
+    width: 280px;
+    background-color: #F4FCD9;
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #00000046;
+
+}
+.smoke, .gas, .fire{
+    display: flex;
+    align-items: center;
+    font-size: small;
+    font-weight: bolder;
+    color:rgba(0, 0, 0, 0.3);
+}
+
+.smoke_image, .gas_image, .fire_image{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 50px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.dashboard{
+    height: 160px;
+    width: 340px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+.switch_widgets{
+    height: 20px;
+    width: 300px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #00000059;
+}
+.switches{
+    width: 320px;
+    display: flex;
+    justify-content: space-around;
+}
+.light, .fan, .ac{
+    height: 90px;
+    width: 70px;
+    border-radius: 10px;
+    border: 1px solid white;
+    box-shadow: 2px 2px 10px #0000003f;
+}
+.light, .fan, .ac{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: x-small;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.541);
+}
+.light .fan .ac, img{
+    height: 30px;
+    width: 30px;
+    background-color: transparent;
+}
+.light_image, .fan_image, .ac_image{
+    height: 40px;
+    width: 40px;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+.settings_menu{
+    height: 50px;
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 10px;
+    position: relative;
+    background-color: #C5D8A4;
+    border-top-left-radius: 500%;
+    border-top-right-radius: 500%;
+}
+.hardware_configuration{
+    height: 50vh;
+    width: 100vw;
+    position: absolute;
+    top: 50px;
+    display: none;
+}
+.loading_ui img{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    background-color:#F4FCD9;
+
+}
+
+.user_logout{
+    position: absolute;
+    top:0;
+    height: 100px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #C5D8A4;
+    display: none;
+    box-shadow: 0px 0px 4px 0px #00000090;
+
+}
+.logout_profile_img{
+    height: 50px;
+    background-color: transparent;
+
+}
+.logout_profile_img img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 3px solid rgb(255, 255, 255);
+    background-color: transparent;
+
+}
+.logout_user_name{
+    background-color: transparent;
+}
+.logout_user_name h5{
+    height: 20px;
+    color: #000000;
+    background-color:transparent;   
+}
+.logout_user_button{
+    margin-bottom: 1vh;
+    background-color: transparent;
+}
+.logout_user_button h5{
+    margin-bottom: 1vh;
+    background-color: transparent;
+}
